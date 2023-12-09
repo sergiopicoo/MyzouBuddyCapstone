@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="auth.js"></script>
+    <title>User Classes</title>
+</head>
+<body>
+    <img src="logo.png" alt="logo" style="width:100px;height:100px;">
+    
+    <div id="mainNavID" class="mainNav">
+        <nav class="navclass">
+            <ul class="navbar1">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="main.html">Main</a></li>
+            <li><a href="page3.html">Dashboard</a></li> 
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="logout-container">
+        <button onclick="logoutAndRedirect()">Logout</button>
+    </div>
+    
+    <div class="class-list-container">
+        <h1>Your Classes</h1>
+        <input type="text" id="classTextBox1" readonly>
+        <input type="text" id="classTextBox2" readonly>
+        <button type="button" id="DClass1" onclick="removeClass(document.getElementById('classTextBox1').value)">Delete class 1</button>
+        <button type="button" id="DClass2" onclick="removeClass(document.getElementById('classTextBox2').value)">Delete class 2</button>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p>Authors: Josh Linck, Danny Smith, Sergio Pico</p>
+        
+    </footer>
+    
+</body>
+</html>
