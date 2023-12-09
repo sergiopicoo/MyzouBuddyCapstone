@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<!--
+
+Authors: Josh Linck, Danny Smith, Sergio Pico
+School/Term: Mizzou Fall 2023
+
+
+-->
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <link rel="stylesheet" type="text/css" href="nav.css">
+                <script src="server.js"></script>
+                <script src="script.js"></script>
+                <script src="auth.js"></script>
+                
+               <meta charset="utf-8">
+               <title>Home</title>
+</head>
+<body>
+    <img src="logo.png" alt="logo" style="width:100px;height:100px;">
+    <div id="mainNavID" class="mainNav">
+        <nav class="navclass">
+            <ul class="navbar1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="main.html">Main</a></li>
+            <li><a href="user.html">Classes</a></li>
+        </ul>
+        </nav>
+    </div>
+
+    <div class="logout-container">
+        <button onclick="logoutAndRedirect()">Logout</button>
+    </div>
+
+    <main>
+        <div class="page3maindiv">
+        <div class="content-container1">
+            <h2>Welcome to Study buddy</h2>
+            <p>Welcome to study buddy, get the help you need!</p>
+            <div class="results-container">
+                <h3>Study Buddy Results</h3>
+                <button type="button" id="findMatchButton">Find Match</button>
+                <div id="matchDisplay">Matching User: None</div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+      
+    <footer>
+        <p>Authors: Josh Linck, Danny Smith, Sergio Pico</p>
+        
+    </footer>
+   
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<!--
+    
+Title: Home Page
+
+Use: Home page for our project
+
+Authors: Josh Linck, Danny Smith, Sergio Pico, Jazzmyn Simms
+
+School/Term: Mizzou Fall 2023
+
+Developed: 10/7/23
+
+Tested: 10/8/23
+
+-->
+                <link rel="stylesheet" type="text/css" href="style.css">
+                <link rel="stylesheet" type="text/css" href="nav.css">
+                <script src="auth.js"></script>
+                
+               <meta charset="utf-8">
+               <title>Home</title>
+</head>
+<body>
+    <img src="logo.png" alt="logo" style="width:100px;height:100px;">
+    <div id="mainNavID" class="mainNav">
+        <nav class="navclass">
+            <ul class="navbar1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="page3.html">Dashboard</a></li>
+            <li><a href="user.html">Classes</a></li>
+        </ul>
+        </nav>
+    </div>
+    
+    <div class="logout-container">
+        <button onclick="logoutAndRedirect()">Logout</button>
+    </div>
+
+    <main>
+        <div class="mainmaindiv">
+        <h2>Add your Classes</h2> 
+        <div class="topnav">
+            <input type="text" placeholder="Search.." id="searchInput">
+        </div>
+        <div id="searchResults">
+            <button type="button" id="result1">Result1</button>
+            <button type="button" id="result2">Result2</button>
+            <button type="button" id="searchButton">Search</button>
+        </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js"></script>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+
+   
+    
+    <footer>
+        <p>Authors: Josh Linck, Danny Smith, Sergio Pico, Jazzmyn Simms</p>
+        
+    </footer>
+   
+</body>
+
+</html>
